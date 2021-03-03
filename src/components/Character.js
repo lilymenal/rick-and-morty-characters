@@ -1,6 +1,6 @@
 import React from "react";
 import "../stylesheet/Character.css";
-import PropTypes from "prop-types";
+//import PropTypes from "prop-types";
 import { Route, Switch, Link } from "react-router-dom";
 
 const Character = (props) => {
@@ -30,10 +30,10 @@ const Character = (props) => {
           {props.user.city} / {getGender()}
         </p>*/
 
-Character.propTypes = {
+/*Character.propTypes = {
   characterProp: PropTypes.shape({
     url: PropTypes.string,
     name: PropTypes.string,
   }),
-};
+};*/
 export default Character;

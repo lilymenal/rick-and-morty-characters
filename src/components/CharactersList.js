@@ -1,7 +1,7 @@
 import React from "react";
 import Character from "./Character";
 import "../stylesheet/CharactersList.css";
-import logo from "../images/logo.png";
+import FilterByName from "./FilterByName";
 
 const CharactersList = (props) => {
   const uElements = props.characters.map((character) => {
@@ -13,10 +13,6 @@ const CharactersList = (props) => {
   });
   return (
     <div className="container">
-      <img src={logo} alt="Logo Rick and Morty show" className="logo" />
-      <form>
-        <input className="form__input-text" type="text" name="name" id="name" />
-      </form>
       <ul className="itemContainer">{uElements}</ul>
     </div>
   );
