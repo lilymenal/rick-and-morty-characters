@@ -8,13 +8,21 @@
   width: 18vw;
 }
 
+.container__name {
+  background-color: rgb(34, 174, 177);
+}
+
 .name {
   display: flex;
   flex-direction: row;
-  border: solid 1px gray;
+  font-size: 12px;
   text-transform: capitalize;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
 }
 .typePokemons {
   display: flex;

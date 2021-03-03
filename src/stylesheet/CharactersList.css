@@ -1,4 +1,11 @@
-.pokeList {
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.card {
   border-color: violet;
   flex-direction: row;
   list-style: none;
@@ -13,9 +20,11 @@
   justify-content: space-between;
 }
 
-.tittle {
+.logo {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  display: flex;
+  /*width: 50%;*/
+  width: 290px;
   justify-content: center;
+  /*object-fit: contain;*/
 }

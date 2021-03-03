@@ -1,6 +1,5 @@
 //import React from "react";
 import React, { useEffect, useState } from "react";
-//import { Route, Switch } from "react-router-dom";
 import CharactersList from "./CharactersList";
 import getDataFromApi from "../services/getDataFromApi";
 import PropTypes from "prop-types";

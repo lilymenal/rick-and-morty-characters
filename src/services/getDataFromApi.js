@@ -15,7 +15,7 @@ const getDataFromApi = () => {
             gender: user.gender,
             origin: user.origin.name,
             created: user.created,
-            image: user.iamge,
+            image: user.image,
           };
         });
       })
