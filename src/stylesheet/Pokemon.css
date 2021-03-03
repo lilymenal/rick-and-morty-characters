@@ -1,0 +1,36 @@
+.containerPoke {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 1px gray;
+  border-radius: 5px;
+  width: 18vw;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px gray;
+  text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.typePokemons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.types {
+  display: flex;
+  justify-content: flex-start;
+  background-color: dimgrey;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  list-style-type: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
