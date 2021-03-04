@@ -1,7 +1,7 @@
 import FilterByName from "./FilterByName";
 import FilterByGender from "./FilterByGender";
 import FilterBySpecies from "./FilterBySpecies";
-
+import "../stylesheet/Filters.css";
 const Filters = (props) => {
   return (
     <section>

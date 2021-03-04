@@ -12,7 +12,7 @@ const Character = (props) => {
 };*/
   //<ul className="typePokemons">{Characters}</ul>
   return (
-    <Link className="name" to={`/character/${props.character.id}`}>
+    <Link className="name__link" to={`/character/${props.character.id}`}>
       <article className="containerPoke">
         <img src={props.character.image}></img>
         <div className="container__name">

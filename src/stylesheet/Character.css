@@ -15,10 +15,10 @@
 .name {
   display: flex;
   flex-direction: row;
-  font-size: 12px;
+  flex-wrap: nowrap;
+  font-size: 15px;
   text-transform: capitalize;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Akaya Telivigala", cursive;
   color: white;
   list-style: none;
   list-style-type: none;
@@ -39,6 +39,5 @@
   text-transform: uppercase;
   border-radius: 5px;
   list-style-type: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Akaya Telivigala", cursive;
 }

@@ -1,0 +1,17 @@
+.form__label {
+  font-size: 20px;
+}
+.display-block {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.form__input-text {
+  background-color: limegreen;
+  color: black;
+  cursor: pointer;
+  border: solid 5px lightseagreen;
+  padding: 3px;
+  margin-bottom: 5px;
+}

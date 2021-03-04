@@ -1,0 +1,8 @@
+.form__label {
+  color: white;
+  font-family: "Akaya Telivigala", cursive;
+}
+.form {
+  display: block;
+  justify-content: center;
+}

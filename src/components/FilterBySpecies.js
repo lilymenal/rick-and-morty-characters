@@ -8,9 +8,9 @@ const FilterBySpecies = (props) => {
     });
   };
   return (
-    <form>
+    <>
       <label className="form__label display-block" htmlFor="specie">
-        Filtrar por especie:
+        Filtra por especie:
       </label>
       <select
         className="form__input-text"
@@ -22,7 +22,7 @@ const FilterBySpecies = (props) => {
         <option value="Human">Humano</option>
         <option value="Alien">Alien</option>
       </select>
-    </form>
+    </>
   );
 };
 export default FilterBySpecies;

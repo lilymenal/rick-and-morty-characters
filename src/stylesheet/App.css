@@ -1,0 +1,21 @@
+.Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+}
+.logo {
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+.h1 {
+  text-align: center;
+  color: white;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 60px;
+}
