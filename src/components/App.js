@@ -22,7 +22,7 @@ const App = () => {
     if (inputChange.key === "name") {
       setName(inputChange.value);
     } else if (inputChange.key === "specie") {
-      setGender(inputChange.value);
+      setSpecie(inputChange.value);
     } else if (inputChange.key === "gender") {
       setGender(inputChange.value);
     }
@@ -37,7 +37,7 @@ const App = () => {
       } else {
         return character.gender === gender;
       }*/
-      return gender === "all" ? true : character.gender === gender;
+      return specie === "all" ? true : character.specie === specie;
     })
     .filter((character) => {
       /*if (specie === "all") {
@@ -45,14 +45,14 @@ const App = () => {
       } else {
         return character.specie === specie;
       }*/
-      return specie === "all" ? true : character.specie === specie;
+      return gender === "all" ? true : character.gender === gender;
     });
   return (
     <>
       <img src={logo} alt="Logo Rick and Morty show" className="logo" />
       <h1>Directorio de Personajes</h1>
       <Filters handleFilter={handleFilter} />
-      <CharactersList characters={characters} />
+      <CharactersList characters={filterCharacters} />
     </>
   );
 };
