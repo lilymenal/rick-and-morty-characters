@@ -3,7 +3,7 @@ aparece y si está vivo o muerto.*/
 
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "../images/logonegro.png";
 import "../stylesheet/CharacterDetail.css";
 
 const CharacterDetail = (props) => {
@@ -11,12 +11,12 @@ const CharacterDetail = (props) => {
   if (props.character === undefined) {
     return (
       <div className="container">
-        <div className="modal__dialog">
-          <div className="modal__content">
+        <div className="">
+          <div className="">
             <header className="header">
               <h2 className="title">Usuario no encontrado</h2>
               <Link to="/">
-                <span className="modal__close icon fas fa-times"></span>
+                <span className=" fab fa-reddit-alien"></span>
               </Link>
             </header>
             <section>
@@ -29,11 +29,10 @@ const CharacterDetail = (props) => {
   } else {
     return (
       <div className="container">
-        <div className="modal__content">
-          <header className="modal__header">
-            <img src={logo} alt="Logo Rick and Morty show" className="logo" />
+        <div className="">
+          <header className="header">
             <Link to="/">
-              <span className="modal__close icon fas fa-times">volver</span>
+              <span className=" icon fab fa-reddit-alien">Volver</span>
             </Link>
           </header>
           <section className="container__detail">
@@ -71,6 +70,7 @@ const CharacterDetail = (props) => {
     );
   }
 };
+//<img src={logo} alt="Logo Rick and Morty show" className="logo" />
 /*
             <img className="card__img" src="" alt="" />
             <ul className="ml-1 mt-1">

@@ -8,7 +8,7 @@
   width: 18vw;
 }
 
-.container__name {
+.container__name--character {
   background-color: rgb(34, 174, 177);
 }
 
@@ -16,13 +16,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  font-size: 15px;
+  font-size: 18px;
   text-transform: capitalize;
   font-family: "Akaya Telivigala", cursive;
-  color: white;
+  color: darkslategray;
   list-style: none;
   list-style-type: none;
   text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 10px;
 }
 .typePokemons {
   display: flex;

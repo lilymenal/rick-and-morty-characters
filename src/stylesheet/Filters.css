@@ -1,17 +1,43 @@
-.form__label {
-  font-size: 20px;
+.filter__container {
+  width: 100%;
+  display: inline;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
-.display-block {
+
+.h2 {
+  color: lightseagreen;
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.form__label {
+  color: rgba(248, 26, 10, 0.685);
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 25px;
+  padding-top: 5px;
+}
+/*.display-block {
   display: block;
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
+}*/
+.form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .form__input-text {
-  background-color: limegreen;
-  color: black;
+  background-color: rgba(8, 8, 92, 0.438);
+  color: rgb(43, 156, 43);
+  font-size: 20px;
+  font-family: "Akaya Telivigala", cursive;
   cursor: pointer;
-  border: solid 5px lightseagreen;
+  border: solid 5px darkslategray;
   padding: 3px;
   margin-bottom: 5px;
 }

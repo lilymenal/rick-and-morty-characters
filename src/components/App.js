@@ -51,19 +51,21 @@ const AppCharacters = () => {
   };
 
   return (
-    <main className="Container">
-      <img src={logo} alt="Logo Rick and Morty show" className="logo" />
-      <h1 className="h1">Directorio de Personajes</h1>
-      <Filters handleFilter={handleFilter} />
+    <div className="Container">
       <Switch>
         <Route exact path="/">
-          <CharactersList characters={filterCharacters} />
+          <header className="header">
+            <img src={logo} alt="Logo Rick and Morty show" className="logo" />
+            <h1 className="h1">Directorio con los Personajes de la Serie</h1>
+          </header>
+          <main className="Container">
+            <Filters handleFilter={handleFilter} />
+            <CharactersList characters={filterCharacters} />
+          </main>
         </Route>
+        <Route exact path="/character/:id" render={renderDetail} />
       </Switch>
-      <Switch>
-        <Route path="/character/:id" render={renderDetail} />
-      </Switch>
-    </main>
+    </div>
   );
 };
 
