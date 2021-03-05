@@ -1,0 +1,109 @@
+.container__detail {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+.section__detail {
+  margin: 40px;
+}
+.container__detail--character {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-style: groove;
+  border-radius: 20px;
+}
+.image__detail {
+  border-radius: 18px 0 0 18px;
+}
+.container__name {
+  background-color: rgba(34, 175, 177, 0.5);
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 0 18px 18px 0;
+}
+.icon__sign--detail {
+  color: lime;
+  /*text-align: right;*/
+  margin-left: 180px;
+  font-size: 30px;
+  :focus {
+    outline: none;
+  }
+  cursor: pointer;
+  text-decoration: none;
+  :hover {
+    color: none;
+  }
+}
+
+.icon--detail {
+  color: lime;
+  margin-left: 155px;
+  font-size: 20px;
+  font-family: "Architects Daughter";
+  cursor: pointer;
+  text-decoration: none;
+  :focus {
+    outline: none;
+  }
+  :hover {
+    color: none;
+  }
+}
+.name__detail {
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+  color: black;
+}
+.name__link--detail {
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  :focus {
+    outline: none;
+  }
+  :hover {
+    color: black;
+  }
+}
+
+.container__detail--notfound {
+  background-color: rgba(34, 175, 177, 0.5);
+  border-style: groove;
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  transition: all 1s ease-out;
+}
+.header__detail--notfound {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title__detail--notfound {
+  font-family: "Architects Daughter", cursive;
+  font-size: 50px;
+  color: black;
+}
+.name__link--detailnot {
+  align-content: center;
+  text-decoration: none;
+}
+.logo__detail--notfound {
+  border-radius: 15px;
+  align-content: center;
+}
+.pargraph__detail--notfound {
+  font-family: "Architects Daughter", cursive;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}

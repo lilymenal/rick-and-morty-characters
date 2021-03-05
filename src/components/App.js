@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Route, Switch, Link } from "react-router-dom";
 import CharactersList from "./CharactersList";
 import getDataFromApi from "../services/getDataFromApi";
-//import PropTypes from "prop-types";
 import Filters from "./Filters";
 import logo from "../images/logo.png";
 import CharacterDetail from "./CharacterDetail";
