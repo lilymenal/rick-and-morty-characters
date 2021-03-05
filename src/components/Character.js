@@ -39,11 +39,11 @@ const Character = (props) => {
   }
 };
 
-/*Character.propTypes = {
+Character.propTypes = {
   characterProp: PropTypes.shape({
     id: PropTypes.number,
     name: PropTypes.string,
-    specie: Proptypes.string,
+    specie: PropTypes.string,
   }),
-};*/
+};
 export default Character;

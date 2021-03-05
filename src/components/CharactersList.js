@@ -6,25 +6,26 @@ import "../stylesheet/CharactersList.css";
 const CharactersList = (props) => {
   console.log(props.characters);
 
-  const uElements = props.characters.map((character) => {
-    if (props.characters === []) {
-      return (
-        <div className="container">
-          <CharacterNotFound character={character} />
-        </div>
-      );
-    } else
+  if (props.characters.length === 0) {
+    return (
+      <article>
+        <CharacterNotFound name={props.name} />
+      </article>
+    );
+  } else {
+    const uElements = props.characters.map((character) => {
       return (
         <li className="card" key={character.id}>
           <Character character={character} />
         </li>
       );
-  });
-  return (
-    <div className="container">
-      <ul className="itemContainer">{uElements}</ul>
-    </div>
-  );
+    });
+    return (
+      <div className="container">
+        <ul className="itemContainer">{uElements}</ul>
+      </div>
+    );
+  }
 };
 
 export default CharactersList;
