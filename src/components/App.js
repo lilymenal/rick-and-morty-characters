@@ -13,6 +13,7 @@ const AppCharacters = () => {
   const [name, setName] = useState("");
   const [gender, setGender] = useState("all");
   const [specie, setSpecie] = useState("all");
+  const [userstatus, setStatus] = useState("all");
 
   // use Api data
   useEffect(() => {
@@ -27,6 +28,8 @@ const AppCharacters = () => {
       setSpecie(inputChange.value);
     } else if (inputChange.key === "gender") {
       setGender(inputChange.value);
+    } else if (inputChange.key === "userstatus") {
+      setStatus(inputChange.value);
     }
   };
   const filterCharacters = characters
@@ -38,6 +41,9 @@ const AppCharacters = () => {
     })
     .filter((character) => {
       return gender === "all" ? true : character.gender === gender;
+    })
+    .filter((character) => {
+      return userstatus === "all" ? true : character.userstatus === userstatus;
     });
 
   // character details
@@ -59,8 +65,14 @@ const AppCharacters = () => {
             <h1 className="h1">Directorio con los Personajes de la Serie</h1>
           </header>
           <main className="Container">
-            <Filters handleFilter={handleFilter} />
-            <CharactersList characters={filterCharacters} />
+            <Filters
+              handleFilter={handleFilter}
+              name={name}
+              gender={gender}
+              specie={specie}
+              status={userstatus}
+            />
+            <CharactersList characters={filterCharacters} name={name} />
           </main>
         </Route>
         <Route exact path="/character/:id" render={renderDetail} />

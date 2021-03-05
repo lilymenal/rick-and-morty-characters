@@ -1,5 +1,6 @@
 import "../stylesheet/filterByName.css";
 import { Route, Switch, Link } from "react-router-dom";
+
 const FilterByName = (props) => {
   const handleChange = (e) => {
     console.log(e.target.value);
@@ -9,17 +10,17 @@ const FilterByName = (props) => {
       value: e.target.value,
     });
   };
-
   return (
     <>
       <label className="form__label display-block" htmlFor="name">
-        Nombre-----------
+        Nombre-----
       </label>
       <input
         className="form__input-text"
         type="text"
         name="name"
         id="name"
+        value={props.name}
         onChange={handleChange}
       />
     </>

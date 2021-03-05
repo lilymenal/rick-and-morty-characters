@@ -8,7 +8,8 @@ import "../stylesheet/CharacterDetail.css";
 
 const CharacterDetail = (props) => {
   console.log(props.character);
-  if (props.character === undefined) {
+
+  if (props.character === []) {
     return (
       <div className="container">
         <div className="">
@@ -30,11 +31,6 @@ const CharacterDetail = (props) => {
     return (
       <div className="container">
         <div className="">
-          <header className="header">
-            <Link to="/">
-              <span className=" icon fab fa-reddit-alien">Volver</span>
-            </Link>
-          </header>
           <section className="container__detail">
             <Link
               className="name__link"
@@ -61,6 +57,10 @@ const CharacterDetail = (props) => {
                   <h2 className="name_Detail">
                     {`Estado: ` + props.character.userstatus}
                   </h2>
+                  <Link className="name__link" to="/">
+                    <span className=" icon__sign fas fa-undo"></span>
+                    <span className=" icon">Regresa</span>
+                  </Link>
                 </div>
               </article>
             </Link>
@@ -70,16 +70,5 @@ const CharacterDetail = (props) => {
     );
   }
 };
-//<img src={logo} alt="Logo Rick and Morty show" className="logo" />
-/*
-            <img className="card__img" src="" alt="" />
-            <ul className="ml-1 mt-1">
-              <li>Género:{props.character.gender} </li>
-              <li>Especie: {props.character.specie}</li>
-              <li>Origen: {props.character.origin}</li>
-              <li>Estado: {props.character.status}</li>
-              <li>Episodios:{props.character.episodes.length}</li>
-            </ul>
-*/
 
 export default CharacterDetail;

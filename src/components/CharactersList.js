@@ -1,15 +1,24 @@
 import React from "react";
 import Character from "./Character";
+import CharacterNotFound from "./CharacterNotFound";
 import "../stylesheet/CharactersList.css";
-import FilterByName from "./FilterByName";
 
 const CharactersList = (props) => {
+  console.log(props.characters);
+
   const uElements = props.characters.map((character) => {
-    return (
-      <li className="card" key={character.id}>
-        <Character character={character} />
-      </li>
-    );
+    if (props.characters === []) {
+      return (
+        <div className="container">
+          <CharacterNotFound character={character} />
+        </div>
+      );
+    } else
+      return (
+        <li className="card" key={character.id}>
+          <Character character={character} />
+        </li>
+      );
   });
   return (
     <div className="container">
