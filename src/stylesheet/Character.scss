@@ -1,0 +1,29 @@
+.dead__icon {
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.container__character {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 175, 177, 0.089);
+  border: groove 1px gray;
+  border-radius: 20px;
+}
+.name__link--character {
+  outline-style: none;
+  text-decoration: none;
+}
+.image__character {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.text__character {
+  font-size: 15px;
+  text-transform: capitalize;
+  font-family: "Akaya Telivigala", cursive;
+  color: black;
+  text-transform: uppercase;
+  padding-left: 10px;
+}

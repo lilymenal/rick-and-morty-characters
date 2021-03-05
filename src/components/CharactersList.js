@@ -1,7 +1,7 @@
 import React from "react";
 import Character from "./Character";
 import CharacterNotFound from "./CharacterNotFound";
-import "../stylesheet/CharactersList.css";
+import "../stylesheet/CharactersList.scss";
 
 const CharactersList = (props) => {
   console.log(props.characters);
@@ -15,14 +15,14 @@ const CharactersList = (props) => {
   } else {
     const uElements = props.characters.map((character) => {
       return (
-        <li className="card" key={character.id}>
+        <li className="card__list" key={character.id}>
           <Character character={character} />
         </li>
       );
     });
     return (
-      <div className="container">
-        <ul className="itemContainer">{uElements}</ul>
+      <div className="container__list">
+        <ul className="container__list--characters">{uElements}</ul>
       </div>
     );
   }

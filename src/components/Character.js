@@ -1,8 +1,7 @@
 import React from "react";
-import "../stylesheet/Character.css";
+import "../stylesheet/Character.scss";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import muerto from "../images/muerto.jpg";
 
 const Character = (props) => {
   let deathStatus;
@@ -10,29 +9,34 @@ const Character = (props) => {
     deathStatus = (
       <>
         {props.character.userstatus}
-        <img src={muerto} alt="Character is dead" className="muerto" />
+        <i className=" dead__icon fas fa-dizzy"></i>
       </>
     );
   } else {
     deathStatus = <>{props.character.userstatus}</>;
   }
   return (
-    <Link className="name__link" to={`/character/${props.character.id}`}>
-      <article className="containerCharacter">
-        <img className="imageCharacter" src={props.character.image}></img>
-        <div className="container__name--character">
-          <h2 className="name">Nombre: {props.character.name}</h2>
-          <h2 className="name">Especie: {props.character.specie}</h2>
-          <h2 className="name">Estado: {deathStatus}</h2>
-        </div>
-      </article>
-    </Link>
+    <article className="container__character">
+      <Link
+        className="name__link--character"
+        to={`/character/${props.character.id}`}
+      >
+        <img className="image__character" src={props.character.image}></img>
+        <section className="container__name--character">
+          <h2 className="text__character">Nombre: {props.character.name}</h2>
+          <h2 className="text__character">Especie: {props.character.specie}</h2>
+          <h2 className="text__character">Estado: {deathStatus}</h2>
+        </section>
+      </Link>
+    </article>
   );
 };
 
 Character.propTypes = {
   characterProp: PropTypes.shape({
+    userstatus: PropTypes.string,
     id: PropTypes.number,
+    image: PropTypes.string,
     name: PropTypes.string,
     specie: PropTypes.string,
   }),
