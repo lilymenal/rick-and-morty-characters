@@ -31,7 +31,9 @@ const AppCharacters = () => {
       setStatus(inputChange.value);
     }
   };
+
   const filterCharacters = characters
+    .sort((a, b) => (a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
     .filter((character) => {
       return character.name.toUpperCase().includes(name.toUpperCase());
     })

@@ -6,13 +6,18 @@
 .container__character {
   width: 100%;
   height: 100%;
-  background-color: rgba(34, 175, 177, 0.089);
+  background-color: rgba(34, 175, 177, 0.705);
   border: groove 1px gray;
   border-radius: 20px;
 }
 .name__link--character {
   outline-style: none;
   text-decoration: none;
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
 }
 .image__character {
   width: 100%;

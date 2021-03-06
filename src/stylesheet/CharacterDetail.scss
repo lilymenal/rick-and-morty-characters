@@ -40,6 +40,11 @@
   /*text-align: right;*/
   margin-left: 180px;
   font-size: 30px;
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
   :focus {
     outline: none;
   }
@@ -63,6 +68,11 @@
   :hover {
     color: none;
   }
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
 }
 .name__detail {
   font-family: "Architects Daughter", cursive;
@@ -78,6 +88,11 @@
   }
   :hover {
     color: black;
+  }
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
   }
 }
 
@@ -108,6 +123,11 @@
 .name__link--detailnot {
   align-content: center;
   text-decoration: none;
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
 }
 .logo__detail--notfound {
   border-radius: 15px;
