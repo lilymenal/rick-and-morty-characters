@@ -1,10 +1,8 @@
-import "../stylesheet/filterByName.css";
-import { Route, Switch, Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const FilterByName = (props) => {
   const handleChange = (e) => {
     console.log(e.target.value);
-    //props.handleFilter("name", e.target.value);
     props.handleFilter({
       key: "name",
       value: e.target.value,
@@ -12,8 +10,8 @@ const FilterByName = (props) => {
   };
   return (
     <>
-      <label className="form__label display-block" htmlFor="name">
-        Nombre-----
+      <label className="form__label" htmlFor="name">
+        NOMBRE
       </label>
       <input
         className="form__input-text"
@@ -26,4 +24,11 @@ const FilterByName = (props) => {
     </>
   );
 };
+
+FilterByName.propTypes = {
+  characterProp: PropTypes.shape({
+    name: PropTypes.string,
+  }),
+};
+
 export default FilterByName;

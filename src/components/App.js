@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Route, Switch, Link } from "react-router-dom";
-import CharactersList from "./CharactersList";
+import { Route, Switch } from "react-router-dom";
 import getDataFromApi from "../services/getDataFromApi";
+import CharactersList from "./CharactersList";
 import Filters from "./Filters";
-import logo from "../images/logo.png";
 import CharacterDetail from "./CharacterDetail";
-import "../stylesheet/App.css";
+import logo from "../images/logo.png";
+import "../stylesheet/App.scss";
 
 const AppCharacters = () => {
   const [characters, setCharacters] = useState([]);
@@ -56,14 +56,20 @@ const AppCharacters = () => {
   };
 
   return (
-    <div className="Container">
+    <div className="App__Container">
       <Switch>
         <Route exact path="/">
           <header className="header">
-            <img src={logo} alt="Logo Rick and Morty show" className="logo" />
-            <h1 className="h1">Directorio con los Personajes de la Serie</h1>
+            <img
+              src={logo}
+              alt="Logo Rick and Morty show"
+              className="App__logo"
+            />
+            <h1 className="App__title">
+              Directorio con los Personajes de la Serie
+            </h1>
           </header>
-          <main className="Container">
+          <main>
             <Filters
               handleFilter={handleFilter}
               name={name}

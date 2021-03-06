@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
+
 const FilterByGender = (props) => {
   const handleChange = (e) => {
-    //console.log(e.target.value);
-    //props.handleFilter("name", e.target.value);
     props.handleFilter({
       key: "gender",
       value: e.target.value,
@@ -9,8 +9,8 @@ const FilterByGender = (props) => {
   };
   return (
     <>
-      <label className="form__label display-block" htmlFor="gender">
-        Género-----
+      <label className="form__label" htmlFor="gender">
+        GÉNERO
       </label>
       <select
         className="form__input-text"
@@ -27,4 +27,11 @@ const FilterByGender = (props) => {
     </>
   );
 };
+
+FilterByGender.propTypes = {
+  characterProp: PropTypes.shape({
+    gender: PropTypes.string,
+  }),
+};
+
 export default FilterByGender;

@@ -1,11 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Character from "./Character";
 import CharacterNotFound from "./CharacterNotFound";
 import "../stylesheet/CharactersList.scss";
 
 const CharactersList = (props) => {
-  console.log(props.characters);
-
   if (props.characters.length === 0) {
     return (
       <article>
@@ -26,6 +25,12 @@ const CharactersList = (props) => {
       </div>
     );
   }
+};
+
+CharactersList.propTypes = {
+  characterProp: PropTypes.shape({
+    name: PropTypes.string,
+  }),
 };
 
 export default CharactersList;

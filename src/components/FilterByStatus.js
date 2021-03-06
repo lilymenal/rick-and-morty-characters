@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
+
 const FilterByStatus = (props) => {
   const handleChange = (e) => {
-    //console.log(e.target.value);
-    //props.handleFilter("name", e.target.value);
     props.handleFilter({
       key: "userstatus",
       value: e.target.value,
@@ -9,8 +9,8 @@ const FilterByStatus = (props) => {
   };
   return (
     <>
-      <label className="form__label display-block" htmlFor="userstatus">
-        Estado-----
+      <label className="form__label" htmlFor="userstatus">
+        ESTADO
       </label>
       <select
         className="form__input-text"
@@ -27,4 +27,11 @@ const FilterByStatus = (props) => {
     </>
   );
 };
+
+FilterByStatus.propTypes = {
+  characterProp: PropTypes.shape({
+    status: PropTypes.string,
+  }),
+};
+
 export default FilterByStatus;

@@ -1,7 +1,7 @@
+import PropTypes from "prop-types";
+
 const FilterBySpecies = (props) => {
   const handleChange = (e) => {
-    //console.log(e.target.value);
-    //props.handleFilter("name", e.target.value);
     props.handleFilter({
       key: "specie",
       value: e.target.value,
@@ -9,8 +9,8 @@ const FilterBySpecies = (props) => {
   };
   return (
     <>
-      <label className="form__label display-block" htmlFor="specie">
-        Especie-----
+      <label className="form__label" htmlFor="specie">
+        ESPECIE
       </label>
       <select
         className="form__input-text"
@@ -26,4 +26,11 @@ const FilterBySpecies = (props) => {
     </>
   );
 };
+
+FilterBySpecies.propTypes = {
+  characterProp: PropTypes.shape({
+    specie: PropTypes.string,
+  }),
+};
+
 export default FilterBySpecies;

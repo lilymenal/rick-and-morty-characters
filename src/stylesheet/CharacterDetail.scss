@@ -13,6 +13,18 @@
   grid-template-rows: 1fr;
   border-style: groove;
   border-radius: 20px;
+  animation-duration: 1s;
+  animation-name: detail;
+}
+
+@keyframes detail {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
 }
 .image__detail {
   border-radius: 18px 0 0 18px;
