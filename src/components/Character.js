@@ -23,9 +23,9 @@ const Character = (props) => {
       >
         <img className="image__character" src={props.character.image}></img>
         <section className="container__name--character">
-          <h2 className="text__character">Nombre: {props.character.name}</h2>
-          <h2 className="text__character">Especie: {props.character.specie}</h2>
-          <h2 className="text__character">Estado: {deathStatus}</h2>
+          <h2 className="text__character">Name: {props.character.name}</h2>
+          <h2 className="text__character">Specie: {props.character.specie}</h2>
+          <h2 className="text__character">Status: {deathStatus}</h2>
         </section>
       </Link>
     </article>

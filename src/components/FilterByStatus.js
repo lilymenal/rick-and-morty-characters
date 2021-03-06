@@ -10,7 +10,7 @@ const FilterByStatus = (props) => {
   return (
     <>
       <label className="form__label" htmlFor="userstatus">
-        ESTADO
+        STATUS
       </label>
       <select
         className="form__input-text"
@@ -19,10 +19,10 @@ const FilterByStatus = (props) => {
         value={props.status}
         onChange={handleChange}
       >
-        <option value="all">Todos</option>
-        <option value="unknown">Desconocido</option>
-        <option value="Alive">Vivo</option>
-        <option value="Dead">Muerto</option>
+        <option value="all">All</option>
+        <option value="unknown">Unknown</option>
+        <option value="Alive">Alive</option>
+        <option value="Dead">Dead</option>
       </select>
     </>
   );

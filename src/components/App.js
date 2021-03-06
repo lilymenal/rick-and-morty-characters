@@ -68,7 +68,7 @@ const AppCharacters = () => {
               className="App__logo"
             />
             <h1 className="App__title">
-              Directorio con los Personajes de la Serie
+              Directory with the characters of the series
             </h1>
           </header>
           <main className="App__main">

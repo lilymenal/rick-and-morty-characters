@@ -6,7 +6,8 @@ const CharacterNotFound = (props) => {
   return (
     <article className="container__notfound">
       <h2 className="title__notfound">
-        "No hay ningún personaje que coincida con lo que buscas... {props.name}"
+        "There's no character that matches what you're looking for...{" "}
+        {props.name}" Try again!
       </h2>
     </article>
   );

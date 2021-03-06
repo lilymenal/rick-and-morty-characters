@@ -10,7 +10,7 @@ const Filters = (props) => {
   };
   return (
     <section className="filter__container">
-      <h2 className="title__filter">Encuéntralos aquí filtrando por</h2>
+      <h2 className="title__filter">Find them here filtering by</h2>
       <form className="form__container" onSubmit={handleForm}>
         <FilterByName handleFilter={props.handleFilter} name={props.name} />
         <FilterByGender

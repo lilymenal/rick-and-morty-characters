@@ -11,7 +11,7 @@ const FilterByName = (props) => {
   return (
     <>
       <label className="form__label" htmlFor="name">
-        NOMBRE
+        NAME
       </label>
       <input
         className="form__input-text"
