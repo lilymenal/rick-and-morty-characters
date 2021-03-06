@@ -52,7 +52,6 @@ const CharacterDetail = (props) => {
               </h2>
               <Link className="name__link--detail" to="/">
                 <span className=" icon__sign--detail fas fa-undo"></span>
-                <span className=" icon--detail">Return</span>
               </Link>
             </div>
           </article>

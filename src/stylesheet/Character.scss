@@ -13,22 +13,37 @@
 .name__link--character {
   outline-style: none;
   text-decoration: none;
-  a:link,
-  a:visited,
-  a:active {
-    text-decoration: none;
+  :hover {
+    color: black;
   }
 }
 .image__character {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
+.container__name--character {
+  text-decoration: none;
+  :hover {
+    color: white;
+  }
+  a:link,
+  a:visited,
+  a:active {
+    text-decoration: none;
+  }
+}
 
 .text__character {
-  font-size: 15px;
+  font-size: 10px;
   text-transform: capitalize;
   font-family: "Akaya Telivigala", cursive;
   color: black;
   text-transform: uppercase;
   padding-left: 10px;
+}
+
+@media all and (min-width: 768px) {
+  .text__character {
+    font-size: 15px;
+  }
 }

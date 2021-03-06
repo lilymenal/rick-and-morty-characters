@@ -3,15 +3,15 @@
   display: inline;
   justify-content: center;
   align-content: center;
-  text-align: center;
   margin-bottom: 20px;
 }
 
 .title__filter {
-  color: lightseagreen;
+  color: rgb(21, 218, 208);
   font-family: "Akaya Telivigala", cursive;
-  font-size: 10px;
+  font-size: 8px;
   text-transform: uppercase;
+  align-items: flex-start;
 }
 .form__container {
   width: 100%;
@@ -23,27 +23,28 @@
 .form__label {
   color: rgba(248, 26, 10, 0.685);
   font-family: "Akaya Telivigala", cursive;
-  font-size: 10px;
+  font-size: 5px;
   padding-top: 5px;
 }
 
 .form__input-text {
   background-color: rgba(8, 8, 92, 0.438);
   color: rgb(43, 156, 43);
-  font-size: 10px;
+  font-size: 5px;
   font-family: "Akaya Telivigala", cursive;
   cursor: pointer;
+  border-radius: 25px;
   border: solid 2px darkslategray;
-  padding: 3px;
   margin-bottom: 5px;
 }
 
 @media all and (min-width: 768px) {
   .form__label {
-    font-size: 25px;
+    font-size: 15px;
   }
   .form__input-text {
-    font-size: 20px;
+    font-size: 15px;
+    padding: 3px;
   }
   .title__filter {
     font-size: 20px;
@@ -51,7 +52,10 @@
 }
 
 @media all and (min-width: 1200px) {
-  .title__filter {
-    font-size: 30px;
+  .form__label {
+    font-size: 25px;
+  }
+  .form__input-text {
+    font-size: 20px;
   }
 }

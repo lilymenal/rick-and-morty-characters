@@ -71,7 +71,7 @@ const AppCharacters = () => {
               Directorio con los Personajes de la Serie
             </h1>
           </header>
-          <main>
+          <main className="App__main">
             <Filters
               handleFilter={handleFilter}
               name={name}
