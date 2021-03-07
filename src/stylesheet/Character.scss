@@ -10,12 +10,9 @@
   border: groove 1px gray;
   border-radius: 20px;
 }
-.name__link--character {
+.linkcharacter {
   outline-style: none;
   text-decoration: none;
-  :hover {
-    color: black;
-  }
 }
 .image__character {
   width: 100%;
@@ -23,14 +20,6 @@
 }
 .container__name--character {
   text-decoration: none;
-  :hover {
-    color: white;
-  }
-  a:link,
-  a:visited,
-  a:active {
-    text-decoration: none;
-  }
 }
 
 .text__character {

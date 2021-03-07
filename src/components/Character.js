@@ -16,19 +16,16 @@ const Character = (props) => {
     deathStatus = <>{props.character.userstatus}</>;
   }
   return (
-    <article className="container__character">
-      <Link
-        className="name__link--character"
-        to={`/character/${props.character.id}`}
-      >
+    <Link className="linkcharacter" to={`/character/${props.character.id}`}>
+      <article className="container__character">
         <img className="image__character" src={props.character.image}></img>
         <section className="container__name--character">
           <h2 className="text__character">Name: {props.character.name}</h2>
           <h2 className="text__character">Specie: {props.character.specie}</h2>
           <h2 className="text__character">Status: {deathStatus}</h2>
         </section>
-      </Link>
-    </article>
+      </article>
+    </Link>
   );
 };
 
